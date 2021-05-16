@@ -1,0 +1,46 @@
+header {
+  background: $color-main;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  .navbar {
+    padding: 0 1rem;
+    justify-content: space-between;
+    .navbar-brand {
+      padding: 0;
+    }
+    .navbar-nav.mainmenu {
+      .nav-item {
+        position: relative;
+        .nav-link {
+          padding: 10px 20px;
+          color: white;
+          font-weight: 700;
+          &:hover {
+            background: white;
+            color: $color-main;
+            animation: expand ease 0.3s;
+          }
+        }
+      }
+    }
+    .navbar-nav.submenu {
+      display: none;
+    }
+  }
+}
+#submenu-overlay {
+  display: none;
+}
+
+@keyframes expand {
+  0% {
+    height: 0px;
+  }
+  50% {
+    height: 50%;
+  }
+  100% {
+    height: 100%;
+  }
+}

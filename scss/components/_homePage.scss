@@ -1,0 +1,70 @@
+#home-page {
+  background-image: url("./../../images/Background.gif");
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem 0;
+  .container {
+    max-width: 95%;
+    .row {
+      .homepage__item {
+        position: relative;
+        a {
+          &:hover {
+            .homepage__text .btn__item-1 {
+              background-color: transparent;
+              color: $color-main;
+              border: 3px solid $color-main;
+            }
+          }
+        }
+        img {
+          height: 100%;
+        }
+        .homepage__text {
+          position: absolute;
+          color: white;
+          h2 {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 800;
+          }
+          button {
+            padding: 5px 20px;
+            border-radius: 20px;
+            border: 3px solid transparent;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 700;
+          }
+        }
+        .item-1 {
+          bottom: 20px;
+          width: 100%;
+          text-align: center;
+          .btn__item-1 {
+            background-color: $color-main;
+            color: white;
+            transition: all 0.5s;
+          }
+        }
+        .item-2 {
+          bottom: 30%;
+          width: 40%;
+          left: 40px;
+          .btn__item-2 {
+            background-color: transparent;
+            border: 3px solid white;
+            color: white;
+            &:hover {
+              background-color: white;
+              color: $color-main;
+              border: 3px solid $color-main;
+            }
+          }
+        }
+      }
+    }
+  }
+}

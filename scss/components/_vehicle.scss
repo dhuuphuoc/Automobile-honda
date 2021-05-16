@@ -1,0 +1,163 @@
+#vehicle {
+  .vehicle__title {
+    h2 {
+      font-size: 4rem;
+      text-align: center;
+      font-weight: 300;
+      color: $color-text;
+    }
+  }
+  .vehicle__content {
+    .nav-tabs {
+      padding: 1rem;
+      .nav-item {
+        .nav-link{
+          color: black;
+          text-transform: uppercase;
+          font-weight: 700;
+          &:hover {
+            border-color: #fff #fff #fff;
+          }
+        }
+        .nav-link.active {
+          color: $color-main;
+          background-color: #fff;
+          border-bottom: 5px solid;
+          border-color: #fff #fff #007cc0 #fff;
+        }
+      }
+    }
+    .tab-content {
+      .container {
+        max-width: 100%;
+        padding: 0;
+      }
+      .tab-pane {
+        .owl-carousel {
+          .owl-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            button {
+              &:hover {
+                color: black;
+              }
+            }
+            .owl-prev {
+              @include owl-button;
+              left: 0;
+              border-radius: 0px 5px 5px 0px;
+            }
+            .owl-next {
+              @include owl-button;
+              right: 0;
+              border-radius: 5px 0px 0px 5px;
+            }
+          }
+          .tab-item {
+            img {
+              width: 100%;
+            }
+          }
+          .car-item {
+            .car-detail {
+              position: absolute;
+              top: 5%;
+              left: 5%;
+              .counter {
+                margin-bottom: 3rem;
+                color: white;
+              }
+              img {
+                width: 220px;
+                margin: 1rem auto;
+                height: auto;
+              }
+              p {
+                font-size: 15px;
+                line-height: 1.5rem;
+                padding: 10px 0;
+                margin-bottom: 0;
+                color: white;
+                width: 22rem;
+              }
+              .stats {
+                .number {
+                  font-size: 35px;
+                  font-weight: 200;
+                  color: white;
+                }
+                .label {
+                  font-size: 12px;
+                  color: white;
+                  text-transform: uppercase;
+                  font-weight: 700;
+                  span {
+                    color: $color-main;
+                  }
+                }
+              }
+              .actions {
+                padding: 1rem;
+                .btn {
+                  width: 120px;
+                }
+                .btn-explore {
+                  @include button-actions(red, white);
+                }
+                .btn-build {
+                  @include button-actions(white, red);
+                }
+                .btn-blue {
+                  @include button-actions($color-main, white);
+                  width: 250px;
+                }
+              }
+            }
+            .link-options {
+              position: absolute;
+              bottom: 0;
+              width: 49%;
+              padding: 10px 0;
+              border-top: 2px solid grey;
+              .container {
+                max-width: 80%;
+                .row {
+                  justify-content: space-between;
+                  .link-text {
+                    align-self: center;
+                    color: white;
+                    text-transform: uppercase;
+                  }
+                  .link-image {
+                    width: 200px;
+                  }
+                }
+              }
+            }
+            .cutline {
+              position: absolute;
+              bottom: 1rem;
+              background-color: rgba(0, 0, 0, 0.7);
+              left: 52%;
+              padding: 2px 10px;
+              .row {
+                margin: 0;
+                .cutline__item {
+                  margin: auto 5px;
+                  span {
+                    color: white;
+                    font-size: 10px;
+                  }
+                  span.characters {
+                    color: $color-main;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

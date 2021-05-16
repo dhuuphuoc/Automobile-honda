@@ -16,15 +16,1527 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
+    <!-- Slick slider -->
+    <link rel="stylesheet" href="./lib/slick/slick.css" />
+    <link rel="stylesheet" href="./lib/slick/slick-theme.css" />
+
+    <!-- Owl carousel -->
+    <link
+      rel="stylesheet"
+      href="./lib/owl-carousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./lib/owl-carousel/assets/owl.theme.default.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo-honda.svg" alt="" width="50px" />
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar-nav mainmenu">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link border-left dropdown-toggle text-uppercase"
+              href="#"
+              id="navbardrop"
+              data-toggle="dropdown"
+            >
+              Vehicle
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Vehicle content</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link border-left border-right dropdown-toggle text-uppercase"
+              href="#"
+              id="navbardrop"
+              data-toggle="dropdown"
+            >
+              Shopping Tools
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Shopping Tools content</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbardrop"
+              data-toggle="dropdown"
+            >
+              Owner
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Owner content</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbardrop"
+              data-toggle="dropdown"
+            >
+              Explore
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Explore content</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Find a dealer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Espanol</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Location
+              <i class="fas fa-map-marker-alt"></i>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav submenu">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-map-marker-alt"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showSubMenu()">
+              <i class="fas fa-bars"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Submenu Reponsive -->
+    <section id="submenu-overlay">
+      <div class="container-fluid">
+        <a href="#">Vehicles</a>
+        <a href="#">Shopping tools</a>
+        <a href="#">Owner</a>
+        <a href="#">Explore</a>
+        <a href="#">Find a dealer</a>
+        <a href="#">Language</a>
+        <input
+          type="text"
+          class="form-control w-50 m-auto"
+          placeholder="Search for anything ... "
+        />
+      </div>
+    </section>
+
+    <!-- Carousel -->
+    <section id="carousel">
+      <div class="carousel__content">
+        <div class="carousel__item">
+          <img src="./images/carousel-1.jpg" alt="" />
+          <div class="carousel__text">
+            <h5>Get into a new Honda at 0% APR.</h5>
+            <button class="btn btn-carousel">See offers</button>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img src="./images/carousel-2.jpg" alt="" />
+          <div class="carousel__text">
+            <h5>
+              Enter for a chance to meet H.E.R. and win an all-new Honda Civic!
+            </h5>
+            <button class="btn btn-carousel">Learn more</button>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img src="./images/carousel-3.jpg" alt="" />
+          <div class="carousel__text">
+            <h5>Discover just how tough a Honda can be.</h5>
+            <button class="btn btn-carousel">Learn more</button>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img src="./images/carousel-4.jpg" alt="" />
+          <div class="carousel__text">
+            <h5>
+              Powerful styling and modern technology converge in the Pilot.
+            </h5>
+            <button class="btn btn-carousel">Explore</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Home Page -->
+    <section id="home-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-12 homepage__item">
+            <a href="#">
+              <img
+                src="./images/homepage-1.jpg"
+                class="img-fluid w-100"
+                alt=""
+              />
+              <div class="homepage__text item-1">
+                <h2>Coming Soon: The All-New Civic Sedan</h2>
+                <button class="btn btn__item-1">Learn more</button>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-12 homepage__item">
+            <img src="./images/homepage-2.jpg" class="img-fluid w-100" alt="" />
+            <div class="homepage__text item-2">
+              <h2>Sporty. Versatile. Ready for anything.</h2>
+              <button class="btn btn__item-2">Learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Vehicle -->
+    <section id="vehicle">
+      <div class="vehicle__title">
+        <h2>Our Vehicles</h2>
+      </div>
+      <div class="vehicle__content">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#menu1">Car</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu2"
+              >SUV & Crossovers</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu3"
+              >Minivan & Truck</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu4">Electrified</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu5">Pre-owned</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu6">Future</a>
+          </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div class="tab-pane container active" id="menu1">
+            <div class="owl-carousel owl-theme">
+              <div class="tab-item car-item">
+                <img src="./images/car-1.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">CARS</span>
+                    <span class="font-weight-bold">1</span>
+                    <span>/</span>
+                    <span class="font-weight-light">8</span>
+                  </div>
+                  <img src="./images/svg/car-1-icon.svg" alt="" />
+                  <p>
+                    With three advanced powertrains, a cabin full of
+                    technological innovations and Honda Sensing® standard on all
+                    trims, the Accord is everything a sedan should be and more.
+                  </p>
+                  <div class="row stats">
+                    <div class="col-6 msrp">
+                      <div class="number">$24,970</div>
+                      <div class="label">
+                        STARTING MSRP
+                        <span>*</span>
+                      </div>
+                    </div>
+                    <div class="col-6 rating">
+                      <div class="number">30 / 38</div>
+                      <div class="label">
+                        CITY/HWY MPG RATING
+                        <span>*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row actions">
+                    <button class="btn btn-explore">Explore</button>
+                    <button class="btn btn-build">Build</button>
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="link-options">
+                    <div class="container">
+                      <div class="row">
+                        <div class="link-text">
+                          Explore the accord family
+                          <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="link-image">
+                          <img src="./images/link-option-icon.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="cutline">
+                  <div class="row">
+                    <div class="cutline__item item-1">
+                      <span
+                        >Touring 2.0T shown in Lunar Silver Metallic at $36,900
+                        MSRP.</span
+                      >
+                      <span class="characters">*</span>
+                    </div>
+                    <div class="cutline__item item-2">
+                      <span>22 city/32 highway mpg rating.</span>
+                      <span class="characters">*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item car-item">
+                <img src="./images/car-2.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">CARS</span>
+                    <span class="font-weight-bold">2</span>
+                    <span>/</span>
+                    <span class="font-weight-light">8</span>
+                  </div>
+                  <img src="./images/svg/car-2-icon.svg" alt="" />
+                  <p>
+                    Sophisticated on the outside. Tech-forward on the inside.
+                    Add efficiency and exhilaration to every drive in the
+                    no-compromise Accord Hybrid.
+                  </p>
+                  <div class="row stats">
+                    <div class="col-6 msrp">
+                      <div class="number">$26,570</div>
+                      <div class="label">
+                        STARTING MSRP
+                        <span>*</span>
+                      </div>
+                    </div>
+                    <div class="col-6 rating">
+                      <div class="number">48 / 48</div>
+                      <div class="label">
+                        CITY/HWY MPG RATING
+                        <span>*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row actions">
+                    <button class="btn btn-explore">Explore</button>
+                    <button class="btn btn-build">Build</button>
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="link-options">
+                    <div class="container">
+                      <div class="row">
+                        <div class="link-text">
+                          Explore the accord family
+                          <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="link-image">
+                          <img src="./images/link-option-icon.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="cutline">
+                  <div class="row">
+                    <div class="cutline__item item-1">
+                      <span
+                        >Hybrid Touring shown in Modern Steel Metallic at
+                        $36,440 MSRP.</span
+                      >
+                      <span class="characters">*</span>
+                    </div>
+                    <div class="cutline__item item-2">
+                      <span>44 city/41 highway mpg rating.</span>
+                      <span class="characters">*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item car-item">
+                <img src="./images/car-3.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">CARS</span>
+                    <span class="font-weight-bold">3</span>
+                    <span>/</span>
+                    <span class="font-weight-light">8</span>
+                  </div>
+                  <img src="./images/svg/car-3-icon.svg" alt="" />
+                  <p>
+                    With fresh looks, innovative technology and sporty
+                    performance, the Civic Sedan delivers more fun inside and
+                    out.
+                  </p>
+                  <div class="row stats">
+                    <div class="col-6 msrp">
+                      <div class="number">$21,250</div>
+                      <div class="label">
+                        STARTING MSRP
+                        <span>*</span>
+                      </div>
+                    </div>
+                    <div class="col-6 rating">
+                      <div class="number">30 / 38</div>
+                      <div class="label">
+                        CITY/HWY MPG RATING
+                        <span>*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row actions">
+                    <button class="btn btn-explore">Explore</button>
+                    <button class="btn btn-build">Build</button>
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="link-options">
+                    <div class="container">
+                      <div class="row">
+                        <div class="link-text">
+                          Explore the accord family
+                          <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="link-image">
+                          <img src="./images/link-option-icon-1.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="cutline">
+                  <div class="row">
+                    <div class="cutline__item item-1">
+                      <span
+                        >Touring shown in Cosmic Blue Metallic at $28,300
+                        MSRP.</span
+                      >
+                      <span class="characters">*</span>
+                    </div>
+                    <div class="cutline__item item-2">
+                      <span>30 city/38 highway mpg rating.</span>
+                      <span class="characters">*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item car-item">
+                <img src="./images/car-4.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">CARS</span>
+                    <span class="font-weight-bold">4</span>
+                    <span>/</span>
+                    <span class="font-weight-light">8</span>
+                  </div>
+                  <img src="./images/svg/car-4-icon.svg" alt="" />
+                  <p>
+                    The Civic Hatchback blends distinctive styling and
+                    streetwise versatility into an unmistakable five-door
+                    package.
+                  </p>
+                  <div class="row stats">
+                    <div class="col-6 msrp">
+                      <div class="number">$22,200</div>
+                      <div class="label">
+                        STARTING MSRP
+                        <span>*</span>
+                      </div>
+                    </div>
+                    <div class="col-6 rating">
+                      <div class="number">31 / 40</div>
+                      <div class="label">
+                        CITY/HWY MPG RATING
+                        <span>*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row actions">
+                    <button class="btn btn-explore">Explore</button>
+                    <button class="btn btn-build">Build</button>
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="link-options">
+                    <div class="container">
+                      <div class="row">
+                        <div class="link-text">
+                          Explore the accord family
+                          <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="link-image">
+                          <img src="./images/link-option-icon-1.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="cutline">
+                  <div class="row">
+                    <div class="cutline__item item-1">
+                      <span
+                        >Sport Touring shown in Sonic Gray Pearl at $28,600
+                        MSRP.</span
+                      >
+                      <span class="characters">*</span>
+                    </div>
+                    <div class="cutline__item item-2">
+                      <span>29 city/37 highway mpg rating.</span>
+                      <span class="characters">*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item car-item">
+                <img src="./images/car-5.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">CARS</span>
+                    <span class="font-weight-bold">5</span>
+                    <span>/</span>
+                    <span class="font-weight-light">8</span>
+                  </div>
+                  <img src="./images/svg/car-5-icon.svg" alt="" />
+                  <p>
+                    The high-performance hatchback is ready to tear up the
+                    track. A new Limited Edition trim in Phoenix Yellow adds
+                    distinctive styling with 46 pounds of weight-reduction
+                    modifications, making it the lightest Civic Type R ever
+                    brought to the U.S.
+                  </p>
+                  <div class="row stats">
+                    <div class="col-6 msrp">
+                      <div class="number">$37,895</div>
+                      <div class="label">
+                        STARTING MSRP
+                        <span>*</span>
+                      </div>
+                    </div>
+                    <div class="col-6 rating">
+                      <div class="number">30 / 38</div>
+                      <div class="label">
+                        CITY/HWY MPG RATING
+                        <span>*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row actions">
+                    <button class="btn btn-explore">Explore</button>
+                    <button class="btn btn-build">Build</button>
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="link-options">
+                    <div class="container">
+                      <div class="row">
+                        <div class="link-text">
+                          Explore the civic family
+                          <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="link-image">
+                          <img src="./images/link-option-icon-1.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="cutline">
+                  <div class="row">
+                    <div class="cutline__item item-1">
+                      <span
+                        >Limited Edition shown in Phoenix Yellow at $43,995
+                        MSRP.</span
+                      >
+                      <span class="characters">*</span>
+                    </div>
+                    <div class="cutline__item item-2">
+                      <span>22 city/28 highway mpg rating.</span>
+                      <span class="characters">*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item car-item">
+                <img src="./images/car-6.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">CARS</span>
+                    <span class="font-weight-bold">6</span>
+                    <span>/</span>
+                    <span class="font-weight-light">8</span>
+                  </div>
+                  <img src="./images/svg/car-6-icon.svg" alt="" />
+                  <p>
+                    With an mpg rating of up to 55 city, <span>*</span> this
+                    hybrid is more than just a beautiful ride. It’s also an
+                    efficient and environmentally responsible vehicle.
+                  </p>
+                  <div class="row stats">
+                    <div class="col-6 msrp">
+                      <div class="number">$23,130</div>
+                      <div class="label">
+                        STARTING MSRP
+                        <span>*</span>
+                      </div>
+                    </div>
+                    <div class="col-6 rating">
+                      <div class="number">55 / 49</div>
+                      <div class="label">
+                        CITY/HWY MPG RATING
+                        <span>*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row actions">
+                    <button class="btn btn-explore">Explore</button>
+                    <button class="btn btn-build">Build</button>
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="link-options">
+                    <div class="container">
+                      <div class="row">
+                        <div class="link-text">
+                          Explore electrified vehicle
+                          <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="link-image">
+                          <img src="./images/link-option-icon-2.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="cutline">
+                  <div class="row">
+                    <div class="cutline__item item-1">
+                      <span
+                        >Touring shown in Modern Steel Metallic at $29,040
+                        MSRP.</span
+                      >
+                      <span class="characters">*</span>
+                    </div>
+                    <div class="cutline__item item-2">
+                      <span>51 city/45 highway mpg rating.</span>
+                      <span class="characters">*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item car-item">
+                <img src="./images/car-7.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">CARS</span>
+                    <span class="font-weight-bold">7</span>
+                    <span>/</span>
+                    <span class="font-weight-light">8</span>
+                  </div>
+                  <img src="./images/svg/car-7-icon.svg" alt="" />
+                  <p>
+                    With roomy seating for five adults and a class-leading
+                    <span>*</span> 47-Mile all-electric Range rating
+                    <span>*</span> , the Clarity Plug-In Hybrid defines
+                    sophistication without compromise.
+                  </p>
+                  <div class="row stats">
+                    <div class="col-6 msrp">
+                      <div class="number">$33,400</div>
+                      <div class="label">
+                        STARTING MSRP
+                        <span>*</span>
+                      </div>
+                    </div>
+                    <div class="col-6 rating">
+                      <div class="number">47 / 340</div>
+                      <div class="label">
+                        MILE EPA<br />/COMBINED<br />RANGE RATING
+                        <span>*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row actions">
+                    <button class="btn btn-explore">Explore</button>
+                    <button class="btn btn-build">Build</button>
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="link-options">
+                    <div class="container">
+                      <div class="row">
+                        <div class="link-text">
+                          Explore the clarity family
+                          <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="link-image">
+                          <img src="./images/link-option-icon-3.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="cutline">
+                  <div class="row">
+                    <div class="cutline__item item-1">
+                      <span
+                        >Touring shown in Modern Steel Metallic at $36,600
+                        MSRP.</span
+                      >
+                      <span class="characters">*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item car-item">
+                <img src="./images/car-8.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">CARS</span>
+                    <span class="font-weight-bold">8</span>
+                    <span>/</span>
+                    <span class="font-weight-light">8</span>
+                  </div>
+                  <img src="./images/svg/car-8-icon.svg" alt="" />
+                  <p>
+                    Clarity Fuel Cell paves a clear path to the future by making
+                    the advanced clean technology of tomorrow available today.
+                  </p>
+                  <div class="row stats">
+                    <div class="col-6 msrp">
+                      <div class="number">Lease Only</div>
+                      <div class="label">
+                        Attractive rates Available
+                        <span>*</span>
+                      </div>
+                    </div>
+                    <div class="col-6 rating">
+                      <div class="number">360</div>
+                      <div class="label">
+                        MILE EPA RANGE<br />RATING
+                        <span>*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row actions">
+                    <button class="btn btn-explore">Explore</button>
+                    <button class="btn btn-build">Build</button>
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="link-options">
+                    <div class="container">
+                      <div class="row">
+                        <div class="link-text">
+                          Explore the clarity family
+                          <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="link-image">
+                          <img src="./images/link-option-icon-3.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="cutline">
+                  <div class="row">
+                    <div class="cutline__item item-1">
+                      <span>Shown in Radiant Red Metallic.</span>
+                      <span class="characters">*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane container fade" id="menu2">
+            <div class="owl-carousel owl-theme">
+              <div class="tab-item car-item">
+                <img src="./images/suv-1.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">SUVs & CROSSOVERS</span>
+                    <span class="font-weight-bold">1</span>
+                    <span>/</span>
+                    <span class="font-weight-light">5</span>
+                  </div>
+                  <img src="./images/svg/suv-1-icon.svg" alt="" />
+                  <p>
+                    With available all-wheel drive and plenty of cargo
+                    <span>*</span> room, the Honda Passport is built to go where
+                    adventure leads you.
+                  </p>
+                  <div class="row stats">
+                    <div class="col-6 msrp">
+                      <div class="number">$32,790</div>
+                      <div class="label">
+                        STARTING MSRP
+                        <span>*</span>
+                      </div>
+                    </div>
+                    <div class="col-6 rating">
+                      <div class="number">20 / 25</div>
+                      <div class="label">
+                        CITY/HWY MPG RATING
+                        <span>*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row actions">
+                    <button class="btn btn-explore">Explore</button>
+                    <button class="btn btn-build">Build</button>
+                  </div>
+                </div>
+                <div class="cutline">
+                  <div class="row">
+                    <div class="cutline__item item-1">
+                      <span
+                        >AWD Elite shown in Lunar Silver Metallic at $44,180
+                        MSRP</span
+                      >
+                      <span class="characters">*</span>
+                    </div>
+                    <div class="cutline__item item-2">
+                      <span>
+                        with Honda Genuine Accessories. 19 city/24 highway mpg
+                        rating.</span
+                      >
+                      <span class="characters">*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item car-item">
+                <img src="./images/suv-2.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">SUVs & CROSSOVERS</span>
+                    <span class="font-weight-bold">2</span>
+                    <span>/</span>
+                    <span class="font-weight-light">5</span>
+                  </div>
+                  <img src="./images/svg/suv-2-icon.svg" alt="" />
+                  <p>
+                    With sporty exterior styling, a comfortable, adjustable
+                    interior and available all-wheel drive, the HR-V is the
+                    ideal crossover.
+                  </p>
+                  <div class="row stats">
+                    <div class="col-6 msrp">
+                      <div class="number">$21,220</div>
+                      <div class="label">
+                        STARTING MSRP
+                        <span>*</span>
+                      </div>
+                    </div>
+                    <div class="col-6 rating">
+                      <div class="number">28 / 34</div>
+                      <div class="label">
+                        CITY/HWY MPG RATING
+                        <span>*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row actions">
+                    <button class="btn btn-explore">Explore</button>
+                    <button class="btn btn-build">Build</button>
+                  </div>
+                </div>
+                <div class="cutline">
+                  <div class="row">
+                    <div class="cutline__item item-1">
+                      <span>Sport shown in Aegean Blue Metallic.</span>
+                      <span class="characters">*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item car-item">
+                <img src="./images/suv-3.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">SUVs & CROSSOVERS</span>
+                    <span class="font-weight-bold">3</span>
+                    <span>/</span>
+                    <span class="font-weight-light">5</span>
+                  </div>
+                  <img src="./images/svg/suv-1-icon.svg" alt="" />
+                  <p>
+                    The CR-V continues to set the benchmark for crossovers, with
+                    modern styling and a turbocharged engine that comes standard
+                    on all non-hybrid trims.
+                  </p>
+                  <div class="row stats">
+                    <div class="col-6 msrp">
+                      <div class="number">$25,350</div>
+                      <div class="label">
+                        STARTING MSRP
+                        <span>*</span>
+                      </div>
+                    </div>
+                    <div class="col-6 rating">
+                      <div class="number">28 / 34</div>
+                      <div class="label">
+                        CITY/HWY MPG RATING
+                        <span>*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row actions">
+                    <button class="btn btn-explore">Explore</button>
+                    <button class="btn btn-build">Build</button>
+                  </div>
+                </div>
+                <div class="cutline">
+                  <div class="row">
+                    <div class="cutline__item item-1">
+                      <span
+                        >Touring with available AWD shown in Radiant Red
+                        Metallic</span
+                      >
+                      <span class="characters">*</span>
+                    </div>
+                    <div class="cutline__item item-2">
+                      <span> at $33,650 MSRP</span>
+                      <span class="characters">*</span>
+                    </div>
+                    <div class="cutline__item item-3">
+                      <span>
+                        with Honda Genuine Accessories. 27 city/32 highway mpg
+                        rating.</span
+                      >
+                      <span class="characters">*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item car-item">
+                <img src="./images/suv-4.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">SUVs & CROSSOVERS</span>
+                    <span class="font-weight-bold">4</span>
+                    <span>/</span>
+                    <span class="font-weight-light">5</span>
+                  </div>
+                  <img src="./images/svg/suv-4-icon.svg" alt="" />
+                  <p>
+                    Combining crossover versatility, an advanced hybrid
+                    powertrain and all-wheel drive, the 2021 CR-V Hybrid blends
+                    functionality with driving bliss.
+                  </p>
+                  <div class="row stats">
+                    <div class="col-6 msrp">
+                      <div class="number">$30,560</div>
+                      <div class="label">
+                        STARTING MSRP
+                        <span>*</span>
+                      </div>
+                    </div>
+                    <div class="col-6 rating">
+                      <div class="number">40 / 35</div>
+                      <div class="label">
+                        CITY/HWY MPG RATING
+                        <span>*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row actions">
+                    <button class="btn btn-explore">Explore</button>
+                    <button class="btn btn-build">Build</button>
+                  </div>
+                </div>
+                <div class="cutline">
+                  <div class="row">
+                    <div class="cutline__item item-1">
+                      <span
+                        >Hybrid Touring shown in Modern Steel Metallic at
+                        $36,350 MSRP.</span
+                      >
+                      <span class="characters">*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item car-item">
+                <img src="./images/suv-5.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">SUVs & CROSSOVERS</span>
+                    <span class="font-weight-bold">5</span>
+                    <span>/</span>
+                    <span class="font-weight-light">5</span>
+                  </div>
+                  <img src="./images/svg/suv-5-icon.svg" alt="" />
+                  <p>
+                    The versatile Pilot is redefining the modern family SUV,
+                    with sporty, refined looks, Honda Sensing® standard, and
+                    seating for up to eight.
+                  </p>
+                  <div class="row stats">
+                    <div class="col-6 msrp">
+                      <div class="number">$32,550</div>
+                      <div class="label">
+                        STARTING MSRP
+                        <span>*</span>
+                      </div>
+                    </div>
+                    <div class="col-6 rating">
+                      <div class="number">20 / 27</div>
+                      <div class="label">
+                        CITY/HWY MPG RATING
+                        <span>*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row actions">
+                    <button class="btn btn-explore">Explore</button>
+                    <button class="btn btn-build">Build</button>
+                  </div>
+                </div>
+                <div class="cutline">
+                  <div class="row">
+                    <div class="cutline__item item-1">
+                      <span
+                        >Elite shown in premium color Sapphire Steel
+                        Metallic</span
+                      >
+                      <span class="characters">*</span>
+                    </div>
+                    <div class="cutline__item item-2">
+                      <span> at $48,720 MSRP</span>
+                      <span class="characters">*</span>
+                    </div>
+                    <div class="cutline__item item-3">
+                      <span>
+                        with Honda Genuine Accessories. 19 city/26 highway mpg
+                        rating.</span
+                      >
+                      <span class="characters">*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane container fade" id="menu3">
+            <div class="owl-carousel owl-theme">
+              <div class="tab-item car-item">
+                <img src="./images/truck-1.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">MINIVAN & TRUCK</span>
+                    <span class="font-weight-bold">1</span>
+                    <span>/</span>
+                    <span class="font-weight-light">2</span>
+                  </div>
+                  <img src="./images/svg/truck-1-icon.svg" alt="" />
+                  <p>
+                    The Odyssey is ready to take on family adventures in style,
+                    with a streamlined exterior, refined interior and advanced
+                    technology throughout.
+                  </p>
+                  <div class="row stats">
+                    <div class="col-6 msrp">
+                      <div class="number">$32,090</div>
+                      <div class="label">
+                        STARTING MSRP
+                        <span>*</span>
+                      </div>
+                    </div>
+                    <div class="col-6 rating">
+                      <div class="number">19 / 28</div>
+                      <div class="label">
+                        CITY/HWY MPG RATING
+                        <span>*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row actions">
+                    <button class="btn btn-explore">Explore</button>
+                    <button class="btn btn-build">Build</button>
+                  </div>
+                </div>
+                <div class="cutline">
+                  <div class="row">
+                    <div class="cutline__item item-1">
+                      <span
+                        >Elite shown in premium color Radiant Red Metallic</span
+                      >
+                      <span class="characters">*</span>
+                    </div>
+                    <div class="cutline__item item-2">
+                      <span> II at $47,820 MSRP.</span>
+                      <span class="characters">*</span>
+                    </div>
+                    <div class="cutline__item item-3">
+                      <span> 19 city/28 highway mpg rating.</span>
+                      <span class="characters">*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item car-item">
+                <img src="./images/truck-2.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">MINIVAN & TRUCK</span>
+                    <span class="font-weight-bold">2</span>
+                    <span>/</span>
+                    <span class="font-weight-light">2</span>
+                  </div>
+                  <img src="./images/svg/truck-2-icon.svg" alt="" />
+                  <p>
+                    The 2021 Ridgeline introduces a tougher aesthetic to an
+                    iconic truck. Its redesigned exterior is a nod to its
+                    impressive capability and complements a powerful
+                    280-horsepower
+                  </p>
+                  <div class="row stats">
+                    <div class="col-6 msrp">
+                      <div class="number">$36,490</div>
+                      <div class="label">
+                        STARTING MSRP
+                        <span>*</span>
+                      </div>
+                    </div>
+                    <div class="col-6 rating">
+                      <div class="number">18 / 24</div>
+                      <div class="label">
+                        CITY/HWY MPG RATING
+                        <span>*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row actions">
+                    <button class="btn btn-explore">Explore</button>
+                    <button class="btn btn-build">Build</button>
+                  </div>
+                </div>
+                <div class="cutline">
+                  <div class="row">
+                    <div class="cutline__item item-1">
+                      <span>RTL-E shown in Radiant Red Metallic</span>
+                      <span class="characters">*</span>
+                    </div>
+                    <div class="cutline__item item-2">
+                      <span> II at $42,420.</span>
+                      <span class="characters">*</span>
+                    </div>
+                    <div class="cutline__item item-3">
+                      <span> 18 city/24 highway mpg rating.</span>
+                      <span class="characters">*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane container fade" id="menu4">
+            <div class="owl-carousel owl-theme">
+              <div class="tab-item car-item">
+                <img src="./images/electrified-1.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">ELECTRIFIED</span>
+                    <span class="font-weight-bold">1</span>
+                    <span>/</span>
+                    <span class="font-weight-light">5</span>
+                  </div>
+                  <img src="./images/svg/electrified-1-icon.svg" alt="" />
+                  <p>
+                    Combining crossover versatility, an advanced hybrid
+                    powertrain and all-wheel drive, the 2021 CR-V Hybrid blends
+                    functionality with driving bliss.
+                  </p>
+                  <div class="row stats">
+                    <div class="col-6 msrp">
+                      <div class="number">$30,560</div>
+                      <div class="label">
+                        STARTING MSRP
+                        <span>*</span>
+                      </div>
+                    </div>
+                    <div class="col-6 rating">
+                      <div class="number">40 / 35</div>
+                      <div class="label">
+                        CITY/HWY MPG RATING
+                        <span>*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row actions">
+                    <button class="btn btn-explore">Explore</button>
+                    <button class="btn btn-build">Build</button>
+                  </div>
+                </div>
+                <div class="cutline">
+                  <div class="row">
+                    <div class="cutline__item item-1">
+                      <span
+                        >Hybrid Touring shown in Modern Steel Metallic at
+                        $36,350 MSRP.</span
+                      >
+                      <span class="characters">*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item car-item">
+                <img src="./images/electrified-2.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">ELECTRIFIED</span>
+                    <span class="font-weight-bold">2</span>
+                    <span>/</span>
+                    <span class="font-weight-light">5</span>
+                  </div>
+                  <img src="./images/svg/electrified-2-icon.svg" alt="" />
+                  <p>
+                    Sophisticated on the outside. Tech-forward on the inside.
+                    Add efficiency and exhilaration to every drive in the
+                    no-compromise Accord Hybrid.
+                  </p>
+                  <div class="row stats">
+                    <div class="col-6 msrp">
+                      <div class="number">$26,570</div>
+                      <div class="label">
+                        STARTING MSRP
+                        <span>*</span>
+                      </div>
+                    </div>
+                    <div class="col-6 rating">
+                      <div class="number">48 / 48</div>
+                      <div class="label">
+                        CITY/HWY MPG RATING
+                        <span>*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row actions">
+                    <button class="btn btn-explore">Explore</button>
+                    <button class="btn btn-build">Build</button>
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="link-options">
+                    <div class="container">
+                      <div class="row">
+                        <div class="link-text">
+                          Explore the accord family
+                          <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="link-image">
+                          <img src="./images/link-option-icon.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="cutline">
+                  <div class="row">
+                    <div class="cutline__item item-1">
+                      <span
+                        >Hybrid Touring shown in Modern Steel Metallic at
+                        $36,440 MSRP.</span
+                      >
+                      <span class="characters">*</span>
+                    </div>
+                    <div class="cutline__item item-2">
+                      <span> 44 city/41 highway mpg rating.</span>
+                      <span class="characters">*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item car-item">
+                <img src="./images/electrified-3.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">ELECTRIFIED</span>
+                    <span class="font-weight-bold">3</span>
+                    <span>/</span>
+                    <span class="font-weight-light">5</span>
+                  </div>
+                  <img src="./images/svg/electrified-3-icon.svg" alt="" />
+                  <p>
+                    With an mpg rating of up to 55 city,
+                    <span>*</span> this hybrid is more than just a beautiful
+                    ride. It’s also an efficient and environmentally responsible
+                    vehicle.
+                  </p>
+                  <div class="row stats">
+                    <div class="col-6 msrp">
+                      <div class="number">$23,130</div>
+                      <div class="label">
+                        STARTING MSRP
+                        <span>*</span>
+                      </div>
+                    </div>
+                    <div class="col-6 rating">
+                      <div class="number">55 / 49</div>
+                      <div class="label">
+                        CITY/HWY MPG RATING
+                        <span>*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row actions">
+                    <button class="btn btn-explore">Explore</button>
+                    <button class="btn btn-build">Build</button>
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="link-options">
+                    <div class="container">
+                      <div class="row">
+                        <div class="link-text">
+                          Explore electrified vehicle
+                          <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="link-image">
+                          <img src="./images/link-option-icon-2.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="cutline">
+                  <div class="row">
+                    <div class="cutline__item item-1">
+                      <span
+                        >Touring shown in Modern Steel Metallic at $29,040
+                        MSRP.</span
+                      >
+                      <span class="characters">*</span>
+                    </div>
+                    <div class="cutline__item item-2">
+                      <span> 51 city/45 highway mpg rating.</span>
+                      <span class="characters">*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item car-item">
+                <img src="./images/electrified-4.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">ELECTRIFIED</span>
+                    <span class="font-weight-bold">4</span>
+                    <span>/</span>
+                    <span class="font-weight-light">5</span>
+                  </div>
+                  <img src="./images/svg/electrified-4-icon.svg" alt="" />
+                  <p>
+                    With roomy seating for five adults and a class-leading
+                    <span>*</span> 47-Mile all-electric Range rating
+                    <span>*</span> , the Clarity Plug-In Hybrid defines
+                    sophistication without compromise.
+                  </p>
+                  <div class="row stats">
+                    <div class="col-6 msrp">
+                      <div class="number">$33,400</div>
+                      <div class="label">
+                        STARTING MSRP
+                        <span>*</span>
+                      </div>
+                    </div>
+                    <div class="col-6 rating">
+                      <div class="number">47 / 340</div>
+                      <div class="label">
+                        MILE EPA<br />/COMBINED<br />RANGE RATING
+                        <span>*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row actions">
+                    <button class="btn btn-explore">Explore</button>
+                    <button class="btn btn-build">Build</button>
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="link-options">
+                    <div class="container">
+                      <div class="row">
+                        <div class="link-text">
+                          Explore the clarity family
+                          <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="link-image">
+                          <img src="./images/link-option-icon-3.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="cutline">
+                  <div class="row">
+                    <div class="cutline__item item-1">
+                      <span
+                        >Touring shown in Modern Steel Metallic at $36,600
+                        MSRP.</span
+                      >
+                      <span class="characters">*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item car-item">
+                <img src="./images/electrified-5.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">ELECTRIFIED</span>
+                    <span class="font-weight-bold">5</span>
+                    <span>/</span>
+                    <span class="font-weight-light">5</span>
+                  </div>
+                  <img src="./images/svg/electrified-5-icon.svg" alt="" />
+                  <p>
+                    Clarity Fuel Cell paves a clear path to the future by making
+                    the advanced clean technology of tomorrow available today.
+                  </p>
+                  <div class="row stats">
+                    <div class="col-6 msrp">
+                      <div class="number">Lease only</div>
+                      <div class="label">
+                        Attractive rates available
+                        <span>*</span>
+                      </div>
+                    </div>
+                    <div class="col-6 rating">
+                      <div class="number">360</div>
+                      <div class="label">
+                        MILE EPA RANGE RATING
+                        <span>*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row actions">
+                    <button class="btn btn-explore">Explore</button>
+                    <button class="btn btn-build">Build</button>
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="link-options">
+                    <div class="container">
+                      <div class="row">
+                        <div class="link-text">
+                          Explore the clarity family
+                          <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="link-image">
+                          <img src="./images/link-option-icon-3.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="cutline">
+                  <div class="row">
+                    <div class="cutline__item item-1">
+                      <span>Shown in Radiant Red Metallic.</span>
+                      <span class="characters">*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane container fade" id="menu5">
+            <div class="owl-carousel owl-theme">
+              <div class="tab-item car-item">
+                <img src="./images/preowned-1.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">PRE-OWNED</span>
+                    <span class="font-weight-bold">1</span>
+                    <span>/</span>
+                    <span class="font-weight-light">1</span>
+                  </div>
+                  <img src="./images/HCPV_logo.png" alt="" />
+                  <p>
+                    With a 182-point inspection, limited vehicle warranty with
+                    7-year powertrain coverage
+                    <span>*</span> and free vehicle history report, our
+                    Certified Pre-Owned Vehicles are everything you can expect
+                    from a Honda and more.
+                  </p>
+                  <div class="row actions">
+                    <button class="btn btn-blue">Shop Certificate</button>
+                  </div>
+                </div>
+                <div class="cutline">
+                  <div class="row">
+                    <div class="cutline__item item-1">
+                      <span>Conditions apply.</span>
+                      <span class="characters">*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane container fade" id="menu6">
+            <div class="owl-carousel owl-theme">
+              <div class="tab-item car-item">
+                <img src="./images/future.jpg" alt="" />
+                <div class="car-detail">
+                  <div class="counter">
+                    <span class="font-weight-bold">FUTURE</span>
+                    <span class="font-weight-bold">1</span>
+                    <span>/</span>
+                    <span class="font-weight-light">1</span>
+                  </div>
+                  <img src="./images/svg/future.svg" alt="" />
+                  <p>
+                    Crank up the fun in the all-new 2022 Civic Sedan, arriving
+                    this summer with dramatic new styling and amplified
+                    performance.
+                  </p>
+                  <div class="row actions">
+                    <button class="btn btn-blue">Learn more</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -35,5 +1547,60 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Slick slider -->
+    <script src="./lib/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".carousel__content").slick({
+          dots: true,
+          infinite: false,
+          speed: 500,
+          autoplay: true,
+          autoplaySpeed: 2500,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        });
+      });
+    </script>
+
+    <!-- Owl carousel -->
+    <script src="./lib/owl-carousel/controllers/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          dots: false,
+          margin: 10,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true,
+            },
+            600: {
+              items: 1,
+              nav: false,
+            },
+            1000: {
+              items: 1,
+              nav: true,
+              loop: false,
+            },
+          },
+        });
+      });
+    </script>
+
+    <script>
+      function showSubMenu() {
+        var x = document.querySelector("#submenu-overlay");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
