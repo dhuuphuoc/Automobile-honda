@@ -1,142 +1,134 @@
-#discover{
-
-    margin-top: 2rem;
-    .heading-honda{
-        
-        text-align: center;
-        color: #00324f;
-        line-height: 3rem;
-        h1{
-            font-size: 4rem;
-            font-weight: 300;
-            letter-spacing: 5px;
-        }
+#discover {
+  margin-top: 2rem;
+  .heading-honda {
+    text-align: center;
+    color: #00324f;
+    line-height: 3rem;
+    h1 {
+      font-size: 4rem;
+      font-weight: 300;
+      letter-spacing: 5px;
     }
-    .discover-honda{
-        
-        .card{
-            margin-right: 20px;
-            margin-top: 20px;
-            
-            
-            .video{
-                position: absolute;
-                display: flex;
-                width: 100%;
-                height: 42%;
-                flex-direction: column;
-                flex-wrap: nowrap;
-                align-content: center;
-                align-items: center;
-                justify-content: center;
-                bottom: 18rem;
-                a{
-                    position: absolute;
-                  i{
-                    border-radius: 50%;
-                    border: 1px solid white;
-                    color: #2198dc;
-                    width: 65px;
-                    height: 65px;
-                    line-height: 65px;
-                    margin: 0 auto;
-                    background-color: #fff;
-                    font-size: 2rem;
-                    &::before{
-                       
-                        position: relative;
-                        left: 1.3rem;
-                    }
-                  }  
-                   
-                }
-            }
-            .card-body{
-                text-align: center;
-                color: #00324f;
-                h6{
-                    padding: 0 15px;
-                    min-height: 36px;
-                }
-                p{
-                    font-size: 14px; 
-                    min-height: 125px;
-                }
-                button{
-                   margin-top: 1rem;
-                    padding: 5px 20px;
-                    border-radius: 25px;
-                    color: #fff;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    border: 2px solid transparent;
-                    &:hover{
-                        background-color: transparent;
-                        color: #007cc0;
-                        border: 2px solid #007cc0 ;
-                    }
-                    
-                }
-            }
-           
-        }
-        @media screen and (min-width: 768px) {
-            .card{
-            display: flex;
-            flex-wrap: wrap;
-            flex: 200px;
-            }
-        }
-    }
-    .discover-bottom{
-        text-align: center;
-        width: 100%;
-        padding: 3rem 0;
-        button{
-        border-radius: 25px;
-        color: #fff;
-        text-transform: uppercase;
-        font-weight: 700;
-        padding: 5px 20px;
-        border: 2px solid transparent;
-        &:hover{
-            background-color: transparent;
-            color: #e42525;
-            border: 2px solid #e42525;
-        }
-        }
-    }
-
-  
-}
-@media screen and (max-width:1024px )  {
-    #discover{
-        .discover-honda{
-            display: flex;
-            .row{
-            .card{
-                img{
-                width: 0;
-                }
-            }   
-        }
-        }
-    }
-    
-}
-
-@media screen  and (max-width:768px) {
-    #discover{
+  }
+  .discover-honda {
+    .card {
+      margin: 20px;
+      .video {
+        position: absolute;
         display: flex;
+        width: 100%;
+        height: 42%;
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-content: center;
         align-items: center;
-    
-        .discover-honda{
-            display: flex;
+        justify-content: center;
+        bottom: 18rem;
+        a {
+          position: absolute;
+          &:hover {
+            i {
+              color: white;
+              background: #2198dc;
+            }
+          }
+          i {
+            transition: all 0.5s;
+            border-radius: 50%;
+            border: 1px solid white;
+            color: #2198dc;
+            width: 65px;
+            height: 65px;
+            line-height: 65px;
+            margin: 0 auto;
+            background-color: #fff;
+            font-size: 2rem;
+            &::before {
+              position: relative;
+              left: 1.3rem;
+            }
+          }
         }
+      }
+      .card-body {
+        text-align: center;
+        color: #00324f;
+        h6 {
+          padding: 0 15px;
+          min-height: 36px;
+        }
+        p {
+          font-size: 14px;
+          min-height: 125px;
+        }
+        button {
+          margin-top: 1rem;
+          padding: 5px 20px;
+          border-radius: 25px;
+          color: #fff;
+          font-weight: 700;
+          text-transform: uppercase;
+          border: 2px solid transparent;
+          &:hover {
+            background-color: transparent;
+            color: #007cc0;
+            border: 2px solid #007cc0;
+          }
+        }
+      }
     }
+    @media screen and (min-width: 768px) {
+      .card {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 200px;
+      }
+    }
+  }
+  .discover-bottom {
+    text-align: center;
+    width: 100%;
+    padding: 3rem 0;
+    button {
+      border-radius: 25px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 5px 20px;
+      border: 2px solid transparent;
+      &:hover {
+        background-color: transparent;
+        color: #e42525;
+        border: 2px solid #e42525;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  #discover {
+    .discover-honda {
+      display: flex;
+      .row {
+        .card {
+          img {
+            width: 0;
+          }
+        }
+      }
+    }
+  }
 }
 
+@media screen and (max-width: 768px) {
+  #discover {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
 
+    .discover-honda {
+      display: flex;
+    }
+  }
+}
