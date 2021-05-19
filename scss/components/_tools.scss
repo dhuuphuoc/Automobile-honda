@@ -1,0 +1,115 @@
+#shopping__tools{
+    
+    background-color: rgb(245, 245, 245);
+    padding: 4rem 0;
+    .touts{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .tout-content{
+        border: 1px solid transparent;
+        padding: 3rem 0rem;
+        background-color: #fff;
+        flex-basis: 23%;
+        margin: 0.8rem;
+        border-radius: 0.5rem;
+        text-align: center;
+        &:hover{
+            cursor: pointer;
+            button{
+                background-color: transparent;
+                color: #007cc0;
+                border: 2px solid #007cc0 ;
+               
+                                         
+            }
+        }
+        i{
+            font-size: 4rem;
+            min-height:  65px;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+        }
+        h5{
+            line-height: 1.5rem;
+            font-size: 1.2rem;
+            min-height: 3rem;
+            margin-top: 2.5rem;
+            font-weight: 700;
+        }
+        button{
+            border-radius: 2rem;
+            color: #fff;
+            font-size: 1.2rem;
+            position: relative;
+            text-align: center;
+            padding: 3px 40px;
+            font-weight: 700;
+            background-color: #007cc0;
+            border: 2px solid transparent;
+            &:hover{
+                color: #007cc0;
+                background-color: #fff;
+            }
+        }
+    }
+}
+}
+
+@media screen and (max-width:1200px) {
+    #shopping__tools{
+        .touts{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #shopping__tools{
+        .touts{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #shopping__tools{
+        .touts{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            .tout-content{
+                flex-basis: 40%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+        #shopping__tools{
+            .touts{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: center;
+                align-content: center;
+            
+                .tout-content{
+                    flex-basis: 40%;
+                    button{
+                        display: none;
+                    }
+                }
+            }
+        }
+}

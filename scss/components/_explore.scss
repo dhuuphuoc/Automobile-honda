@@ -1,0 +1,242 @@
+
+       #explore{ 
+              
+              &::after{
+                     content: "";
+                     display: table;
+              }
+              &::before{
+                     content: "";
+                     display: table;
+              }
+                   
+                     padding-left: 78px;
+                     padding-right: 78px;
+                     background-color: rgb(245, 245, 245);
+                     display: flex;
+                     align-content: center;
+                     justify-content: space-around;
+                     height: auto;
+                     flex-direction: row;
+                     flex-wrap: nowrap;   
+                     width: 100%;
+                     height: 370px;
+                     .explore__item-img{
+                           
+                            bottom: 0;
+                            height: 100%;
+                            left: 0;
+                            position: relative;
+                            right: 0;
+                            text-decoration: none;
+                            top: 0;
+                            vertical-align: middle;
+                            width: calc(100% - 1px * 2);
+                            margin-right: 2rem;
+                            &:hover{
+                                   cursor: pointer;
+                                   .condition{ 
+                                          button{
+                                          background-color: transparent;
+                                          color: #007cc0;
+                                          border: 2px solid #007cc0 ;
+                                          }
+                                        
+                                   }      
+                                   
+                            }
+                            img{
+                            width: 100%;
+                            height: 100%;
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            }
+                           
+                            .condition{
+                                   height: auto;
+                                   overflow: hidden;
+                                   position: relative;
+                                   text-align: center;
+                                   bottom: 4rem;
+                                   
+                                   
+                            button{
+                                  
+                                   padding: 5px 25px;
+                                   border-radius: 25px;
+                                   text-transform: uppercase;
+                                   font-weight: 800;
+                                   background-color: #007cc0;
+                                   border: 2px solid transparent;
+                                   &:hover{
+                                   background-color: transparent;
+                                   color: #007cc0;
+                                   }
+                                   }
+                            h6{
+                                   color: #2198dc4a ;
+                                   font-weight: 300;
+                                   text-decoration: none;
+                                   span{
+                                   color: #007cc0;
+                                   }
+                            }
+                            
+                            }
+                     }
+                     .explore__item-info{
+                            bottom: 0;
+                            height: 100%;
+                            left: 0;
+                            position: relative;
+                            right: 0;
+                            text-decoration: none;
+                            top: 0;
+                            vertical-align: middle;
+                            width: calc(100% - 1px * 2);
+                            &:hover{
+                                   cursor: pointer;
+                                   .guides{ 
+                                          button{
+                                          background-color: transparent;
+                                          color: #007cc0;
+                                          border: 2px solid #007cc0 ;
+                                          }
+                                   }      
+                                   
+                            }
+                                  
+                            
+                            img{
+                                   width: 100%;
+                                   height: 100%;
+                                   background-size: cover;
+                                   background-position: center;
+                                   background-repeat: no-repeat;
+                                   }
+                            .guides{ 
+                                   height: auto;
+                                   overflow: hidden;
+                                   position: relative;
+                                   text-align: center;
+                                   width: 100%;
+                                   bottom: 9.4rem;
+                                   padding: 0 4rem;
+                                   h5{
+                                   color: white;
+                                   font-weight: 600;
+                                   font-size: 18px;
+                                   
+                                   }
+                                   p{
+                                   color: white;
+                                   font-size: 14px;
+                                   }
+                                   button{
+                                          padding: 5px 25px;
+                                          border-radius: 25px;
+                                          font-weight: 800;
+                                          text-transform: uppercase;
+                                          background-color: #007cc0;
+                                          border: 2px solid transparent;
+                                          &:hover{
+                                          background-color: transparent;
+                                          color: #007cc0;
+                                          
+                                          }
+                                   }
+                            }
+                     }
+                            
+       }
+       
+   
+
+       @media screen and (max-width: 1024px) {
+       #explore{
+             
+              flex-wrap: nowrap;
+
+              .explore__item-img{
+                     padding-left: 25px;
+                     img{
+                     width: 100%;
+                     height: 370px;
+                     padding-right: 10px;
+                     }
+                     
+              }
+              .explore__item-info{
+                     padding-right: 25px;
+                    img{
+                    width: 100%;
+                    height: 370px;
+                    padding-right: 10px;
+                     }
+                     .guides{
+                            padding: 0px 4.6rem;
+                            h5{
+                            font-size: 13px ;
+                            }
+                            p{    
+                            font-size: 10px;
+                            }
+                     }
+              }
+       
+       }
+}
+@media  screen  and (max-width: 768px){
+       #explore{           
+              width: 100%;
+              height: 370px;
+              display: flex;
+              flex-wrap: nowrap;
+              flex-direction: row;
+              align-content: center;
+              justify-content: center;
+              align-items: stretch;
+          
+              .explore__item-img{
+                     padding-left: 0;
+                     
+              }
+              .explore__item-info{
+                     padding-right: 0;
+                     .guides{
+                            padding: 0 1rem;
+                     }
+              }
+
+       }
+}
+
+@media  screen  and (max-width: 480px){
+       #explore{
+              display: flex;
+              flex-direction: column;
+              align-content: center;
+              width: 100%;
+              height: auto;
+
+            
+              .explore__item-img{
+              padding-left: 0;
+              img{
+                     width: 100%;
+              }
+              }
+              .explore__item-info{
+                  padding-right:0 ;
+                  img{
+                         width: 100%;
+                  }
+                  .guides{
+                         padding: 0 1rem ;
+                  }
+              }
+       }
+       
+}
+

@@ -1,0 +1,16 @@
+
+    a.vanillatop{
+    border-radius: 8px 0 0 8px;
+    bottom: 100px;
+    height: 55px;
+    right: 0px;
+    width: 55px;
+    background-color: #007cc0;
+    &::before{
+        content: "";
+    }
+    i{
+    color: #fff;
+    font-size: 1.4rem;
+    }
+}
